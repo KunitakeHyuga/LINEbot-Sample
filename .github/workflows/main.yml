@@ -30,6 +30,7 @@ jobs:
           python -m pip install --upgrade pip
           # 必要なパッケージインストール
           pip install line-bot-sdk
+          pip install some_module  # 例: some_module モジュールのインストール
       - name: Run script
         run: |
           # main.pyの実行
