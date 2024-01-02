@@ -1,5 +1,7 @@
 def main():
     from linebot.v3.messaging import Configuration, MessagingApi, ApiClient, PushMessageRequest, ApiException
+    from some_module import Configuration  # 例: Configuration クラスを提供するモジュール
+
 
 
 configuration = Configuration(
