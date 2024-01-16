@@ -1,5 +1,4 @@
-def main():
-    from linebot.v3.messaging import Configuration, MessagingApi, ApiClient, PushMessageRequest, ApiException
+from linebot.v3.messaging import Configuration, MessagingApi, ApiClient, PushMessageRequest, ApiException
 
 
 configuration = Configuration(
@@ -26,6 +25,3 @@ with ApiClient(configuration) as api_client:
         print(f'The response of MessagingApi->push_message status code => {push_message_result.status_code}')
     except ApiException as e:
         print('Exception when calling MessagingApi->push_message: %s\n' % e)
-        
-if __name__ == "__main__":
-    main()
